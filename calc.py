@@ -9,7 +9,7 @@ hide_st_style = """
             """
 
 def calculator():
-    st.title("Simple Calculator by Ritabrata")
+    st.title("Simple Calculator by Ritabrata Roy")
 
     # Input for the first number
     num1 = st.number_input("Enter the first number:", value=0)
