@@ -1,4 +1,5 @@
 import streamlit as st
+import json
 hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
@@ -39,4 +40,9 @@ def calculator():
 
 if __name__ == "__main__":
     st.markdown(hide_st_style, unsafe_allow_html=True)
+    with open("my_secret.json", "r") as file:
+        secret_data = json.load(file)
+
     calculator()
+         
+    st.write(secret_data['mantra'])
